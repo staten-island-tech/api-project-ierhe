@@ -1,9 +1,11 @@
 import './style.css'
 
+
+
 async function getData(antivirus){
   try {
     //go get data
-    const response = await fetch(`https://urlhaus-api.abuse.ch/v1/payloads/recent/`);
+    const response = await fetch(`https://api.maldatabase.com/download`);
     //handle errors
     if(response.status != 200){
       throw new Error(response);
