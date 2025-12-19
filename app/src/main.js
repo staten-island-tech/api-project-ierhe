@@ -5,7 +5,7 @@ import './style.css'
 async function getData(antivirus){
   try {
     //go get data
-    const response = await fetch(`https://api.maldatabase.com/download`);
+    const response = await fetch(`https://www.cheapshark.com/api/1.0/deals?storeID=1&upperPrice=15`);
     //handle errors
     if(response.status != 200){
       throw new Error(response);
