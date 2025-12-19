@@ -12,12 +12,29 @@ async function getData(antivirus){
     }else{
       //makes the response into json data we can use
       const data = await response.json();
-      console.log(data)
-      document.getElementById("api-response").textContent = data.name;
+      console.log(data);
+      return getData;
     }
   } catch (error) {
     console.log(error);
   }
 }
 
-console.log(getData())
+function inject(data){
+  const container = document.querySelector(".container")
+  container.insertAdjacentHTML("afterbegin",
+    `<div class="card">
+        <div class="Name">
+          <h1>${data.title}</h1>
+        </div>
+      </div>`
+    );
+}
+
+console.log(getData());
+
+let dataarray = [];
+
+dataarray = getData(dataarray);
+
+dataarray.forEach(inject);
