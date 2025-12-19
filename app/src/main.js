@@ -1,7 +1,5 @@
 import './style.css'
 
-
-
 async function getData(antivirus){
   try {
     //go get data
@@ -35,6 +33,6 @@ console.log(getData());
 
 let dataarray = [];
 
-dataarray = getData(dataarray);
+dataarray = getData((antivirus));
 
 dataarray.forEach(inject);
