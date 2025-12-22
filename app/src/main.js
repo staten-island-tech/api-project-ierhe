@@ -4,9 +4,10 @@ async function getData(){
   try {
     const response = await fetch(`https://www.cheapshark.com/api/1.0/deals?storeID=1&upperPrice=15`);
     if(response.status != 200){
-      console.log(response)
+      throw new Error(response)
     }else{
       const data = await response.json();
+ /*      data.card.forEach((card) => console.log(card)) */
       console.log(data);
       return getData;
     }
