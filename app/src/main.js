@@ -31,7 +31,7 @@ console.log(getData());
 
 let dataarray = [];
 
-dataarray = getData((antivirus));
+dataarray = getData((data));
 
 dataarray.forEach(inject);
 
