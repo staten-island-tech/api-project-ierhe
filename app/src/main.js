@@ -32,4 +32,15 @@ let dataarray = [];
 
 dataarray.forEach(inject);
 
+const last = document.getElementById("lastpage");
+const next = document.getElementById("nextpage");
+
+last.addEventListener("click", function (e) {
+  
+});
+
+next.addEventListener("click", function (e) {
+  
+});
+
 /* https://www.cheapshark.com/api/1.0/deals?storeID=1&upperPrice=15&pageNumber=1 */
