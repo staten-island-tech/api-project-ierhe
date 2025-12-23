@@ -37,16 +37,16 @@ const next = document.getElementById("nextpage");
 
 pagenumber = 0
 
-last.addEventListener("click", function (e) {
+last.addEventListener("click", function () {
   if (pagenumber < 0) {
     console.log("CANT DO THAT")
   } else{
-    pagenumber++
+    pagenumber - 1
   }
 });
 
-next.addEventListener("click", function (e) {
-  
+next.addEventListener("click", function () {
+  pagenumber++
 });
 
 /* https://www.cheapshark.com/api/1.0/deals?storeID=1&upperPrice=15&pageNumber=1 */
