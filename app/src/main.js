@@ -38,10 +38,10 @@ const next = document.getElementById("nextpage");
 let pagenumber = 0
 
 last.addEventListener("click", function () {
-  if (pagenumber < 0) {
+  if (pagenumber = 0) {
     console.log("CANT DO THAT")
   } else{
-    pagenumber - 
+    pagenumber - 1
     console.log(pagenumber)
   }
 });
