@@ -7,8 +7,7 @@ async function getData(){
       throw new Error(response)
     }else{
       const data = await response.json();
- /*      data.card.forEach((card) => console.log(card)) */
-      console.log(data);
+      data.forEach((title) => console.log(title))
       return getData;
     }
   } catch (error) {
@@ -31,7 +30,6 @@ console.log(getData());
 
 let dataarray = [];
 
-dataarray = getData((data));
-
 dataarray.forEach(inject);
 
+/* https://www.cheapshark.com/api/1.0/deals?storeID=1&upperPrice=15&pageNumber=1 */
