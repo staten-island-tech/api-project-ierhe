@@ -35,18 +35,20 @@ dataarray.forEach(inject);
 const last = document.getElementById("lastpage");
 const next = document.getElementById("nextpage");
 
-pagenumber = 0
+let pagenumber = 0
 
 last.addEventListener("click", function () {
   if (pagenumber < 0) {
     console.log("CANT DO THAT")
   } else{
-    pagenumber - 1
+    pagenumber - 
+    console.log(pagenumber)
   }
 });
 
 next.addEventListener("click", function () {
   pagenumber++
+  console.log(pagenumber)
 });
 
 /* https://www.cheapshark.com/api/1.0/deals?storeID=1&upperPrice=15&pageNumber=1 */
