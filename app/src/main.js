@@ -35,6 +35,8 @@ dataarray.forEach(inject);
 const last = document.getElementById("lastpage");
 const next = document.getElementById("nextpage");
 
+pagenumber = 0
+
 last.addEventListener("click", function (e) {
   
 });
