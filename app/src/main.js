@@ -61,7 +61,7 @@ next.addEventListener("click", async function () {
   pagenumber++
   console.log(pagenumber)
   try {
-    const response = await fetch(`https://www.cheapshark.com/api/1.0/deals?storeID=1&upperPrice="pagenumber"`);
+    const response = await fetch(`https://www.cheapshark.com/api/1.0/deals?storeID=1&upperPrice=${pagenumber}`);
     if(response.status != 200){
       throw new Error(response)
     }else{
