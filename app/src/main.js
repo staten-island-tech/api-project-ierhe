@@ -19,11 +19,11 @@ function inject(data){
   const container = document.querySelector(".container")
   container.insertAdjacentHTML("afterbegin",
     `<div class="card">
-        <div class="Name">
-          <h1>${data.title}</h1>
-        </div>
-      </div>`
-    );
+      <div class="Name">
+        <h1>${data.title}</h1>
+      </div>
+    </div>`
+  );
 }
 
 console.log(getData());
@@ -50,6 +50,7 @@ last.addEventListener("click", async function () {
       }else{
         const data = await response.json();
         data.forEach((title) => console.log(title))
+        data.forEach((title) => inject(title))
         return getData;
       }
     } catch (error) {
@@ -67,6 +68,7 @@ next.addEventListener("click", async function () {
     }else{
       const data = await response.json();
       data.forEach((title) => console.log(title))
+      data.forEach((title) => inject(title))
       return getData;
     }
   } catch (error) {
