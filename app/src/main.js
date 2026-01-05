@@ -74,4 +74,4 @@ next.addEventListener("click", async function () {
   }
 });
 
-/* https://www.cheapshark.com/api/1.0/deals?storeID=1&upperPrice=15&pageNumber=1 */
+
