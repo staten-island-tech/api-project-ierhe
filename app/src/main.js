@@ -28,10 +28,6 @@ function inject(data){
 
 console.log(getData());
 
-let dataarray = [];
-
-dataarray.forEach(inject);
-
 const last = document.getElementById("lastpage");
 const next = document.getElementById("nextpage");
 
