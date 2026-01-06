@@ -4,12 +4,19 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/style.css" rel="stylesheet">
     <title>app</title>
   </head>
   <body>
-    <button id="nextpage">next page</button>
-    <button id="lastpage">last page</button>
-    <section class="container"></section>
+    <div class= "relative size-32">
+      <div class="absolute inset-x-0 top-0 h-16">
+        <button id="nextpage">next page</button>
+        <button id="lastpage">last page</button>
+      </div>
+    </div>
+    <div class = "flex items-center">
+      <section class="container"></section>
+    </div>
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
   </body>
