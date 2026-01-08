@@ -34,6 +34,7 @@ const next = document.getElementById("nextpage");
 let pagenumber = 0
 
 last.addEventListener("click", async function () {
+  document.querySelector(".container").innerHTML = "";
   if (pagenumber == 0) {
     console.log("CANT DO THAT")
   } else{
@@ -55,6 +56,7 @@ last.addEventListener("click", async function () {
 }});
 
 next.addEventListener("click", async function () {
+  document.querySelector(".container").innerHTML = "";
   pagenumber++
   console.log(pagenumber)
   try {
