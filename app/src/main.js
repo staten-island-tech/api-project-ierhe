@@ -7,7 +7,8 @@ async function getData(){
       throw new Error(response)
     }else{
       const data = await response.json();
-      data.forEach((title) => console.log(title))
+/*       data.forEach((title) => console.log(title))
+      data.forEach((title) => inject(title)) */
       return getData;
     }
   } catch (error) {
@@ -34,10 +35,10 @@ const next = document.getElementById("nextpage");
 let pagenumber = 0
 
 last.addEventListener("click", async function () {
-  document.querySelector(".container").innerHTML = "";
   if (pagenumber == 0) {
     console.log("CANT DO THAT")
   } else{
+    document.querySelector(".container").innerHTML = "";
     pagenumber -= 1
     console.log(pagenumber)
     try {
