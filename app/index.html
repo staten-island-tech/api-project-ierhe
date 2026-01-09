@@ -1,24 +1,24 @@
 <!doctype html>
 <html class="dark">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/src/style.css" rel="stylesheet">
-  <title>app</title>
-</head>
-<div>
-  <div class="bg-white dark:bg-black">
-    <div class= "flex relative size-32 inset-x-0 top-0 h-16">
-      <button id="nextpage" class="bg-amber-100 flex absolute inset-x-0 top-0 h-16">next page</button>
-      <button id="lastpage" class="bg-amber-100 flex absolute inset-x-0 top-0 h-16">last page</button>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/src/style.css" rel="stylesheet">
+    <title>app</title>
+  </head>
+  <body>
+    <div class="bg-white dark:bg-black">
+      <div class= "flex relative size-32 inset-x-0 top-0 h-16">
+        <button id="nextpage">next page</button>
+        <button id="lastpage">last page</button>
+      </div>
+      <div class = "bg-blue-300 flex items-center">
+        <section class="container"></section>
+      </div>
+      <div id="app"></div>
+      <script type="module" src="/src/main.js"></script>
     </div>
-    <div class = "bg-blue-300 flex items-center">
-      <section class="container"></section>
-    </div>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </div>
-</body>
+  </body>
 </html>
 
 
