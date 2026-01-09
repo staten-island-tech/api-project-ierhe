@@ -19,7 +19,7 @@ async function getData(){
 function inject(data){
   const container = document.querySelector(".container")
   container.insertAdjacentHTML("afterbegin",
-    `<div class="card">
+    `<div class="card flex justify-center p-3">
       <div class="Name">
         <h1>${data.title}</h1>
       </div>
