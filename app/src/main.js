@@ -24,7 +24,7 @@ function inject(data){
         <h1>${data.title}</h1>
       </div>
       <div class="Price">
-        <h1>${data.salePrice}</h1>
+        <h1>""""${data.salePrice}</h1>
       </div>
     </div>`
   );
